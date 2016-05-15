@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="03c5ca47-c05e-4b3c-a43a-13879eeacc28" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ChainingHash.java" afterPath="$PROJECT_DIR$/src/ChainingHash.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/QPHash.java" afterPath="$PROJECT_DIR$/src/QPHash.java" />
-    </list>
+    <list default="true" id="03c5ca47-c05e-4b3c-a43a-13879eeacc28" name="Default" comment="" />
     <ignored path="Homework 4.iws" />
     <ignored path=".idea/workspace.xml" />
     <ignored path="$PROJECT_DIR$/out/" />
@@ -747,12 +744,12 @@
       <workItem from="1463156478754" duration="12445000" />
       <workItem from="1463279143373" duration="2445000" />
       <workItem from="1463334736052" duration="2577000" />
-      <workItem from="1463340560282" duration="1043000" />
+      <workItem from="1463340560282" duration="1137000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65833000" />
+    <option name="totallyTimeSpent" value="65927000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
