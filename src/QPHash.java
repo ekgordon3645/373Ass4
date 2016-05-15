@@ -12,8 +12,6 @@ public class QPHash {
 	public static final int HASH_CONSTANT = 229; // Prime multiplicative constant for hash function
 	private QPNode[] hashTable;
 	private int tableIndex; // Tracks current index for getNextKey()
-	private int wordCount; // Tracks total word count of all keys in hashTable
-	private int keyCount; // Tracks total number of keys stored in hashTable for load factor
 
 	/**
 	 * Instantiates a QPHash with the default hash table size.
@@ -29,8 +27,6 @@ public class QPHash {
 	public QPHash(int startSize){
 		hashTable = new QPNode[startSize];
 		tableIndex = 0;
-		wordCount = 0;
-		keyCount = 0;
 	}
 
 	/**
@@ -56,11 +52,9 @@ public class QPHash {
 	 * @param keyToAdd : the key which will be added to the hash table; case-sensitive.
 	 */
 	public void insert(String keyToAdd) {
-		wordCount++;
 		int hashCode = hash(keyToAdd);
 		if (hashTable[hashCode] == null) {
 			hashTable[hashCode] = new QPNode(keyToAdd);
-			keyCount++;
 		}
 		assert hashTable[hashCode].hashedString.equals(keyToAdd);
 		hashTable[hashCode].count++;
@@ -96,30 +90,6 @@ public class QPHash {
 		hashCode = probe(hashCode, keyToHash);
 		assert hashCode >= 0 && hashCode <= hashTable.length;
 		return hashCode;
-	}
-
-	/**
-	 * Returns the number of words in the hash table
-	 * @return : Returns the total count of all words in the hash table
-	 */
-	public int getWordCount() {
-		return wordCount;
-	}
-
-	/**
-	 * Returns the number of keys in the hash table
-	 * @return : Returns the total number of keys in the hash table
-	 */
-	public int getKeyCount() {
-		return keyCount;
-	}
-
-	/**
-	 * Computes the load factor (lambda) of the hashTable
-	 * @return : Returns the computed load factor
-	 */
-	public double loadFactor() {
-		return (double) keyCount / hashTable.length;
 	}
 
 	/**

@@ -13,9 +13,6 @@ public class ChainingHash {
     private ChainingNode[] hashTable;
     private int tableIndex; // Tracks current hashTable position for getNextKey()
     private int listIndex; // Tracks current key for getNextKey()
-    private int wordCount; // Tracks total word count of all keys in hashTable
-    private int keyCount; // Tracks total number of unique keys in hashTable
-    private int loadCount; // Tracks total number of non-null indices in hashTable for load factor
 
     /**
      * Instantiates a ChainingHash with the default hash table size.
@@ -30,10 +27,8 @@ public class ChainingHash {
      */
     public ChainingHash(int startSize){
         hashTable = new ChainingNode[startSize];
-        wordCount = 0;
         tableIndex = 0;
         listIndex = 0;
-        loadCount = 0;
     }
 
     /**
@@ -70,11 +65,7 @@ public class ChainingHash {
      * @param keyToAdd : the key which will be added to the hash table
      */
     public void insert(String keyToAdd){
-        wordCount++;
         int hashCode = hash(keyToAdd);
-        if (hashTable[hashCode] == null) { // We must utilize another index of the hashTable; increment loadCount
-            loadCount++;
-        }
         ChainingNode current = hashTable[hashCode];
 
         // Check each node in list for the desired key
@@ -85,7 +76,6 @@ public class ChainingHash {
             current = new ChainingNode(keyToAdd); // keyToAdd is not in list; create new node
             current.next = hashTable[hashCode];
             hashTable[hashCode] = current;
-            keyCount++;
         }
         assert current.hashedString.equals(keyToAdd);
         current.count++;
@@ -122,30 +112,6 @@ public class ChainingHash {
         hashCode = Math.abs(hashCode);
         assert hashCode >= 0 && hashCode <= hashTable.length;
         return hashCode;
-    }
-
-    /**
-     * Returns the total count of all words in the hash table
-     * @return : Returns the total number of words in the hash table
-     */
-    public int getWordCount() {
-        return wordCount;
-    }
-
-    /**
-     * Returns the number of keys in the hash table
-     * @return : Returns the total number of keys in the hash table
-     */
-    public int getKeyCount() {
-        return keyCount;
-    }
-
-    /**
-     * Computes the load factor (lambda) of the hashTable
-     * @return : Returns the computed load factor
-     */
-    public double loadFactor() {
-        return (double) loadCount / hashTable.length;
     }
 
     /**

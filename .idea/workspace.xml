@@ -2,8 +2,6 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="03c5ca47-c05e-4b3c-a43a-13879eeacc28" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/.idea/vcs.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/ChainingHash.java" afterPath="$PROJECT_DIR$/src/ChainingHash.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/QPHash.java" afterPath="$PROJECT_DIR$/src/QPHash.java" />
     </list>
@@ -41,8 +39,8 @@
       <file leaf-file-name="ChainingHash.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/ChainingHash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="850">
-              <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
+            <state relative-caret-position="475">
+              <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
               <folding>
                 <element signature="docComment;class#ChainingHash#0" expanded="false" />
                 <element signature="docComment;method#ChainingHash#0;class#ChainingHash#0" expanded="false" />
@@ -56,9 +54,6 @@
                 <element signature="method#findCount#0;class#ChainingHash#0" expanded="false" />
                 <element signature="docComment;method#hash#0;class#ChainingHash#0" expanded="false" />
                 <element signature="method#hash#0;class#ChainingHash#0" expanded="false" />
-                <element signature="docComment;method#getWordCount#0;class#ChainingHash#0" expanded="false" />
-                <element signature="docComment;method#getKeyCount#0;class#ChainingHash#0" expanded="false" />
-                <element signature="docComment;method#loadFactor#0;class#ChainingHash#0" expanded="false" />
                 <element signature="docComment;class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
                 <element signature="class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
               </folding>
@@ -69,8 +64,8 @@
       <file leaf-file-name="QPHash.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/QPHash.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="315">
-              <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+            <state relative-caret-position="300">
+              <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
               <folding>
                 <element signature="docComment;class#QPHash#0" expanded="false" />
                 <element signature="docComment;method#QPHash#0;class#QPHash#0" expanded="false" />
@@ -84,9 +79,6 @@
                 <element signature="method#findCount#0;class#QPHash#0" expanded="false" />
                 <element signature="docComment;method#hash#0;class#QPHash#0" expanded="false" />
                 <element signature="method#hash#0;class#QPHash#0" expanded="false" />
-                <element signature="docComment;method#getWordCount#0;class#QPHash#0" expanded="false" />
-                <element signature="docComment;method#getKeyCount#0;class#QPHash#0" expanded="false" />
-                <element signature="docComment;method#loadFactor#0;class#QPHash#0" expanded="false" />
                 <element signature="docComment;method#probe#0;class#QPHash#0" expanded="false" />
                 <element signature="method#probe#0;class#QPHash#0" expanded="false" />
                 <element signature="docComment;class#QPNode#0;class#QPHash#0" expanded="false" />
@@ -134,8 +126,8 @@
         <option value="$PROJECT_DIR$/src/CodeSandbox.java" />
         <option value="$PROJECT_DIR$/src/ChainingHashTest.java" />
         <option value="$PROJECT_DIR$/src/Test.java" />
-        <option value="$PROJECT_DIR$/src/QPHash.java" />
         <option value="$PROJECT_DIR$/src/ChainingHash.java" />
+        <option value="$PROJECT_DIR$/src/QPHash.java" />
       </list>
     </option>
   </component>
@@ -755,12 +747,12 @@
       <workItem from="1463156478754" duration="12445000" />
       <workItem from="1463279143373" duration="2445000" />
       <workItem from="1463334736052" duration="2577000" />
-      <workItem from="1463340560282" duration="331000" />
+      <workItem from="1463340560282" duration="1043000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="65121000" />
+    <option name="totallyTimeSpent" value="65833000" />
   </component>
   <component name="TodoView">
     <todo-panel id="selected-file">
@@ -815,20 +807,6 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <breakpoints>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ChainingHash.java</url>
-          <line>121</line>
-          <properties />
-          <option name="timeStamp" value="47" />
-        </line-breakpoint>
-        <line-breakpoint enabled="true" type="java-line">
-          <url>file://$PROJECT_DIR$/src/ChainingHash.java</url>
-          <line>72</line>
-          <properties />
-          <option name="timeStamp" value="48" />
-        </line-breakpoint>
-      </breakpoints>
       <option name="time" value="49" />
     </breakpoint-manager>
     <watches-manager />
@@ -863,9 +841,6 @@
             <element signature="method#findCount#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#ChainingHash#0" expanded="false" />
             <element signature="method#hash#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
             <element signature="class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
           </folding>
@@ -889,9 +864,6 @@
             <element signature="method#findCount#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#QPHash#0" expanded="false" />
             <element signature="method#hash#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;class#QPNode#0;class#QPHash#0" expanded="false" />
@@ -937,9 +909,6 @@
             <element signature="method#findCount#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#ChainingHash#0" expanded="false" />
             <element signature="method#hash#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
             <element signature="class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
           </folding>
@@ -963,9 +932,6 @@
             <element signature="method#findCount#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#QPHash#0" expanded="false" />
             <element signature="method#hash#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;class#QPNode#0;class#QPHash#0" expanded="false" />
@@ -1011,9 +977,6 @@
             <element signature="method#findCount#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#ChainingHash#0" expanded="false" />
             <element signature="method#hash#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
             <element signature="class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
           </folding>
@@ -1037,9 +1000,6 @@
             <element signature="method#findCount#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#QPHash#0" expanded="false" />
             <element signature="method#hash#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;class#QPNode#0;class#QPHash#0" expanded="false" />
@@ -1085,9 +1045,6 @@
             <element signature="method#findCount#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#QPHash#0" expanded="false" />
             <element signature="method#hash#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;class#QPNode#0;class#QPHash#0" expanded="false" />
@@ -1113,9 +1070,6 @@
             <element signature="method#findCount#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#ChainingHash#0" expanded="false" />
             <element signature="method#hash#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
             <element signature="class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
           </folding>
@@ -1151,9 +1105,6 @@
             <element signature="method#findCount#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#QPHash#0" expanded="false" />
             <element signature="method#hash#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;class#QPNode#0;class#QPHash#0" expanded="false" />
@@ -1187,9 +1138,6 @@
             <element signature="method#findCount#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#ChainingHash#0" expanded="false" />
             <element signature="method#hash#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
             <element signature="class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
           </folding>
@@ -1213,9 +1161,6 @@
             <element signature="method#findCount#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#QPHash#0" expanded="false" />
             <element signature="method#hash#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;class#QPNode#0;class#QPHash#0" expanded="false" />
@@ -1241,9 +1186,6 @@
             <element signature="method#findCount#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#QPHash#0" expanded="false" />
             <element signature="method#hash#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;class#QPNode#0;class#QPHash#0" expanded="false" />
@@ -1269,9 +1211,6 @@
             <element signature="method#findCount#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#QPHash#0" expanded="false" />
             <element signature="method#hash#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;class#QPNode#0;class#QPHash#0" expanded="false" />
@@ -1328,8 +1267,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/ChainingHash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="850">
-          <caret line="140" column="5" selection-start-line="140" selection-start-column="5" selection-end-line="140" selection-end-column="5" />
+        <state relative-caret-position="475">
+          <caret line="66" column="39" selection-start-line="66" selection-start-column="39" selection-end-line="66" selection-end-column="39" />
           <folding>
             <element signature="docComment;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;method#ChainingHash#0;class#ChainingHash#0" expanded="false" />
@@ -1343,9 +1282,6 @@
             <element signature="method#findCount#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#ChainingHash#0" expanded="false" />
             <element signature="method#hash#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#ChainingHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#ChainingHash#0" expanded="false" />
             <element signature="docComment;class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
             <element signature="class#ChainingNode#0;class#ChainingHash#0" expanded="false" />
           </folding>
@@ -1354,8 +1290,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/QPHash.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="315">
-          <caret line="86" column="0" selection-start-line="86" selection-start-column="0" selection-end-line="86" selection-end-column="0" />
+        <state relative-caret-position="300">
+          <caret line="26" column="32" selection-start-line="26" selection-start-column="32" selection-end-line="26" selection-end-column="32" />
           <folding>
             <element signature="docComment;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#QPHash#0;class#QPHash#0" expanded="false" />
@@ -1369,9 +1305,6 @@
             <element signature="method#findCount#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#hash#0;class#QPHash#0" expanded="false" />
             <element signature="method#hash#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getWordCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#getKeyCount#0;class#QPHash#0" expanded="false" />
-            <element signature="docComment;method#loadFactor#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="method#probe#0;class#QPHash#0" expanded="false" />
             <element signature="docComment;class#QPNode#0;class#QPHash#0" expanded="false" />
