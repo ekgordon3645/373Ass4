@@ -38,16 +38,25 @@ public class ChainingHash {
      * @return Returns the next element of the hash table. Returns null if it is at its end.
      */
     public String getNextKey(){
-        String nextKey = null;
-        while ((tableIndex < hashTable.length - 1) && (hashTable[tableIndex] == null)) {
+
+        // No keys left in table to return
+        if (tableIndex >= hashTable.length) {
+            return null;
+        }
+        String nextKey = "";
+
+        // Find the next non-null list of keys in the hash table
+        while ((tableIndex < hashTable.length) && (hashTable[tableIndex] == null)) {
             tableIndex++;
         }
         ChainingNode current = hashTable[tableIndex];
+
+        // Iterate until we reach the next key to return.
         for (int i = 0; i < listIndex; i++) {
             current = current.next;
         }
         listIndex++;
-        if (current.next == null) {
+        if (current.next == null) { // No more keys left in the list at this index of hash table
             listIndex = 0;
             tableIndex++;
         }
