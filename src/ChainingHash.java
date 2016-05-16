@@ -4,7 +4,7 @@
  * of literature.
  *
  * @author Evan Gordon
- * Created for University of Washington CSE 373. Last Modified May 13th, 2016.
+ * Created for University of Washington CSE 373. Last Modified May 15th, 2016.
  */
 
 public class ChainingHash {
@@ -39,21 +39,20 @@ public class ChainingHash {
      */
     public String getNextKey(){
         String nextKey = null;
-        while (tableIndex < hashTable.length && nextKey == null) {
-            if (hashTable[tableIndex] != null) { // Found an entry; examine its list
-                ChainingNode current = hashTable[tableIndex];
-                for (int i = 0; i < listIndex; i++) { // Traverse to current list-position
-                    current = current.next;
-                }
-                listIndex++;
-                if (current.next == null) { // No keys remain for this index of hashTable
-                    listIndex = 0; // Ensure we look at the beginning of next node's list
-                    tableIndex++; // Move to next index of hashTable
-                }
-                nextKey = current.hashedString;
-            } else { // Continue searching hashTable for nodes that are not null
-                tableIndex++;
-            }
+        while ((tableIndex < hashTable.length - 1) && (hashTable[tableIndex] == null)) {
+            tableIndex++;
+        }
+        ChainingNode current = hashTable[tableIndex];
+        for (int i = 0; i < listIndex; i++) {
+            current = current.next;
+        }
+        listIndex++;
+        if (current.next == null) {
+            listIndex = 0;
+            tableIndex++;
+        }
+        if (current != null) {
+            nextKey = current.hashedString;
         }
         return nextKey;
     }
@@ -109,8 +108,10 @@ public class ChainingHash {
             hashCode = HASH_CONSTANT * hashCode + keyToHash.charAt(i);
         }
         hashCode %= hashTable.length;
-        hashCode = Math.abs(hashCode);
-        assert hashCode >= 0 && hashCode <= hashTable.length;
+        if (hashCode < 0) {
+            hashCode += hashTable.length;
+        }
+        assert hashCode >= 0 && hashCode < hashTable.length;
         return hashCode;
     }
 
